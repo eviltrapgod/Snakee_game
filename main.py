@@ -1,4 +1,4 @@
-import confg
+import cfg
 
 def main():
     pass
