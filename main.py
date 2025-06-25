@@ -1,1 +1,1 @@
-rgtrtrt
+class main
