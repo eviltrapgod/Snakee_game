@@ -2,7 +2,10 @@ import start
 
 # вызов функциональной части программы
 def main():
-    start.choose_game_settings()
+    start.print_start_background()
+    username = start.choose_username()
+    start.print_hello_massage(username)
+    game_difficulty = start.choose_difficulty()
 
 # вход в программу
 if __name__ == "__main__":
