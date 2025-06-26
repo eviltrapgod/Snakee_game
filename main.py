@@ -1,8 +1,8 @@
 import cfg
-
+import start
 # Точка входа
 def main():
-    pass
+    start.start_game()
 
 
 

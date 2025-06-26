@@ -1,13 +1,7 @@
 import cfg
 
-
-
-
-start_msg = """
-Добро пожаловать в игру Змейка, {username}!
-
-"""
-username = input("Введите ваше имя: ")
-print(start_msg.format(username=username))
+def start_game():
+    username = input("Введите ваше имя: ")
+    print(cfg.start_msg.format(username=username))
 
 
