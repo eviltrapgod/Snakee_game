@@ -2,7 +2,7 @@ import start
 
 # Точка входа
 def main():
-    start.start_game()
+    start.choose_game_settings()
         
 
 if __name__ == "__main__":

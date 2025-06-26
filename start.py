@@ -1,7 +1,7 @@
 import cfg
 
 # функция выбора не постоянных параметров и приветствие
-def start_game():
+def choose_game_settings():
     print(cfg.START_BACKGROUND)
     # Функция выбора имени пользователя
     def choose_username():
