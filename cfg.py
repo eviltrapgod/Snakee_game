@@ -6,8 +6,8 @@ BLOCK_HOTKEY_LIST = ["alt","ctrl","shift","esc","win","alt"and"F4"]
 ANSW_NO_LIST = ["нет","no"]
 # Список ответов "да"
 ANSW_YES_LIST = ["да","yes"]
-# Стартовое сообщение
 
+# ярик лох ебаный
 
 # Стартовый фон
 START_BACKGROUND = """
