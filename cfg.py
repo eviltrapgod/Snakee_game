@@ -1,5 +1,8 @@
-import start, main
+# просто пустой класс :)
+class void:
+    pass
 
+# Константы
 class const:
     # Список горячих клавиш для блокировки
     BLOCK_HOTKEY_LIST = ["alt","ctrl","shift","esc","win","alt"and"F4"]

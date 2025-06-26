@@ -1,4 +1,4 @@
-import cfg
+import cfg, redirect_to_level
 
 # функция выбора параметров игры
 
@@ -11,26 +11,23 @@ def choose_username():
     username = input("Введите ваше имя: ")
     return username
 
-# вывод приветственного сообщения
-def print_hello_massage(username):
+# Вывод приветственного сообщения
+def print_hello_message(username):
     print(f"{username}, Добро пожаловать в игру Snake! Или..")
 
-# Выбор уровня сложности и приветствие
+# Выбор уровня сложности 
 
 def choose_difficulty():
     print("""Выберите уровень сложности:
             1. Легкий
             2. Средний
             3. Сложный""")
-    try:
-        game_difficulty = input("Введите номер уровня: ")
-        if game_difficulty in ["1", "2", "3"]:
-            choosed_game_difficulty = game_difficulty
-            return choosed_game_difficulty
-        else:
-            raise ValueError
-
-    except ValueError:
+    selected_difficulty = input("Введите номер уровня: ")
+    if selected_difficulty in ["1", "2", "3"]:
+        return selected_difficulty
+    else:
         print("Некорректный ввод. Попробуйте еще раз.")
         return choose_difficulty()
-        
+
+def goto_level(selected_difficulty):
+    redirect_to_level(selected_difficulty)
