@@ -12,22 +12,23 @@ def choose_game_settings():
     start_msg = choose_username()
 
     # Выбор уровня сложности и приветствие
-    def choose_level(start_msg):
+    def choose_difficulty(start_msg):
         print(start_msg)
         print("""Выберите уровень сложности:
               1. Легкий
               2. Средний
               3. Сложный""")
         try:
-            game_level = input("Введите номер уровня: ")
-            if game_level not in ["1", "2", "3"]:
-                raise ValueError
+            game_difficulty = input("Введите номер уровня: ")
+            if game_difficulty in ["1", "2", "3"]:
+                choosed_game_difficulty = game_difficulty
+                return choosed_game_difficulty
             else:
-                return choose_level
+                raise ValueError
+
         except ValueError:
             print("Некорректный ввод. Попробуйте еще раз.")
-            return choose_level(start_msg)
-        return game_level
+            return choose_difficulty(start_msg)
     # запись в переменную выбранный уровень сложности
-    game_level = choose_level(start_msg)
+    choosed_game_difficulty = choose_difficulty(start_msg)
 
