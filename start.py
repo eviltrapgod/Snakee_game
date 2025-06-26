@@ -1,7 +1,17 @@
 import cfg
 
 def start_game():
-    username = input("Введите ваше имя: ")
-    print(cfg.start_msg.format(username=username))
+    print(cfg.START_BACKGROUND)
+
+    def choose_username():
+        username = input("Введите ваше имя: ")
+    choose_username()
+    
 
 
+
+
+    def choose_level():
+        pass
+    print(cfg.START_MSG)
+    
