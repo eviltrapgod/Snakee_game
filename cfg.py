@@ -1,3 +1,6 @@
-HOTKEY_LIST = ["alt","ctrl","shift","esc","win","alt"and"F4"]
+# Список горячих клавиш для блокировки
+BLOCK_HOTKEY_LIST = ["alt","ctrl","shift","esc","win","alt"and"F4"]
+# Список ответов "нет"
 ANSW_NO_LIST = ["нет","no"]
+# Список ответов "да"
 ANSW_YES_LIST = ["да","yes"]
