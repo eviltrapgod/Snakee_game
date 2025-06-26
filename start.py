@@ -1,6 +1,8 @@
 import cfg
 
 
+
+
 start_msg = """
 Добро пожаловать в игру Змейка, {username}!
 
