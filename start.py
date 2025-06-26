@@ -1,4 +1,4 @@
-import cfg, redirect_to_level
+import cfg, redirect
 
 # функция выбора параметров игры
 
@@ -28,6 +28,3 @@ def choose_difficulty():
     else:
         print("Некорректный ввод. Попробуйте еще раз.")
         return choose_difficulty()
-
-def goto_level(selected_difficulty):
-    redirect_to_level(selected_difficulty)
