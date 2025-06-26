@@ -1,4 +1,4 @@
-import cfg, start
+import start
 
 # Точка входа
 def main():

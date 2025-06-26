@@ -1,22 +1,23 @@
-import cfg, main
+import cfg
 
 def start_game():
     print(cfg.START_BACKGROUND)
 
-    def choose_username(start_msg):
+    def choose_username():
         username = input("Введите ваше имя: ")
-        start_msg = f"Добро пожаловать в игру Змейка, {username}!"
+        start_msg = f"Добро пожаловать в игру Snake, {username}!"
         return start_msg
-
-    choose_username()
-
-
+    
+    start_msg = choose_username()
+    # Выбор уровня сложности через вызов функции choose_level
     def choose_level(start_msg):
         print(start_msg)
         print("""Выберите уровень сложности:
               1. Легкий
               2. Средний
               3. Сложный""")
-
         game_level = input("Введите номер уровня: ")
         return game_level
+    # запись в переменную выбранный уровень сложности
+    game_level = choose_level(start_msg)
+
