@@ -1,3 +1,4 @@
+import start
 # просто пустой класс :)
 class void:
     pass
@@ -35,4 +36,7 @@ class const:
     ╚════════════════════════════════════════════════════════╝
 
     """
-            
+
+    
+class var:
+    username = start.choose_username()
