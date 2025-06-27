@@ -1,4 +1,3 @@
-import start
 # просто пустой класс :)
 class void:
     pass
@@ -37,6 +36,7 @@ class const:
 
     """
 
-    
+
 class var:
-    username = start.choose_username()
+    lock_keyboard_status = True
+    lock_mouse_status = True

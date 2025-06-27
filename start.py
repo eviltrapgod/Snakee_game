@@ -1,4 +1,4 @@
-import cfg, redirect
+import cfg
 
 # функция выбора параметров игры
 
@@ -13,7 +13,7 @@ def choose_username():
 
 # Вывод приветственного сообщения
 def print_hello_message(username):
-    print(f"{username}, Добро пожаловать в игру Snake! Или..")
+    print(f"{username}, Добро пожаловать в игру Snake!")
 
 # Выбор уровня сложности 
 
