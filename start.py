@@ -1,5 +1,6 @@
 import cfg
 
+
 # функция выбора параметров игры
 
 def print_start_background():
