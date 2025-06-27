@@ -21,10 +21,15 @@ def choose_difficulty():
     print("""Выберите уровень сложности:
             1. Легкий
             2. Средний
-            3. Сложный""")
-    selected_difficulty = input("Введите номер уровня: ")
-    if selected_difficulty in ["1", "2", "3"]:
-        return selected_difficulty
-    else:
-        print("Некорректный ввод. Попробуйте еще раз.")
+            3. Сложный
+            4. Очень сложный
+            """)
+    try:
+        selected_difficulty = input("Введите номер уровня сложности: ")
+        if selected_difficulty in ["1", "2", "3", "4"]:
+            return selected_difficulty
+        else:
+            raise ValueError
+    except ValueError:
+        print("Неверный номер уровня сложности. Попробуйте еще раз.")
         return choose_difficulty()

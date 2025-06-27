@@ -10,9 +10,9 @@ class const:
     ANSW_NO_LIST = ["нет","no"]
     # Список ответов "да"
     ANSW_YES_LIST = ["да","yes"]
-
+ 
     # ярик лох ебаный
-
+    
     # Стартовый фон
     START_BACKGROUND = """
 
@@ -36,7 +36,3 @@ class const:
 
     """
 
-
-class var:
-    lock_keyboard_status = True
-    lock_mouse_status = True
