@@ -5,26 +5,31 @@ import os
 def print_start_background():
     print(cfg.const.START_BACKGROUND)
 
-
 # Функция выбора имени пользователя
 def choose_username():
-    if os.path.exists("username.txt"):
-        with open("username.txt", "r") as f:
+    # Проверка на существование файла с именем пользователя
+    if os.path.exists("data/username.txt"):
+        # Чтение предыдущего имени пользователя
+        with open("data/username.txt", "r") as f:
             previous_username = f.read().strip()
+            # Предложение использовать предыдущее имя
         use_previous = input(f"Вы хотите использовать предыдущее имя '{previous_username}'? (да/нет): ")
+        # Проверка ответа пользователя
         if use_previous.lower() in cfg.const.ANSW_YES_LIST:
             username = previous_username
-        else:
+        elif use_previous.lower() in cfg.const.ANSW_NO_LIST:
             username = input("Введите ваше новое имя: ")
-            f = open("username.txt", "w")
-            f.write(username)
-            f.close()
+            with open("data/username.txt", "w") as f:
+                f.write(username)
             return username
+        else:
+            print("Некорректный ввод. Пожалуйста, ответьте 'да' или 'нет'.")
+            return choose_username()
+    # Если файла с именем пользователя нет
     else:
         username = input("Введите ваше имя: ")
-        f = open("username.txt", "w")
-        f.write(username)
-        f.close()
+        with open("data/username.txt", "w") as f:
+            f.write(username)
     return username
 
 # Вывод приветственного сообщения

@@ -1,7 +1,7 @@
 import cfg
 
 def check_status():
-    print(cfg.const.agreement_text)
+    print(cfg.const.AGREEMENT_TEXT)
     try:
         user_agreement = input("Вы согласны с условиями? (да/нет): ")
         if user_agreement.lower() in cfg.const.ANSW_YES_LIST:
