@@ -1,6 +1,7 @@
 # просто пустой класс :)
 class void:
     pass
+    pass
 
 # Константы
 class const:
