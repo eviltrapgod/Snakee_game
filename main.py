@@ -6,7 +6,7 @@ def main():
     try:
         if not check_agreement.check_status():
             sys.exit()
-        elif check_agreement.check_status():
+        else:
             # вывод стартового экрана
             start.print_start_background()
             # выбор имени пользователя

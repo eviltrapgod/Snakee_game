@@ -4,6 +4,9 @@ class void:
 
 # Константы
 class const:
+    GAME_TITLE = "Snake Game"
+    # Версия игры
+    GAME_VERSION = "3.0"
     # Список горячих клавиш для блокировки
     BLOCK_HOTKEY_LIST = ("alt","ctrl","shift","esc","win","alt"and"F4")
     # Список ответов "нет"
@@ -23,7 +26,7 @@ class const:
 
 """
     # Стартовый фон
-    START_BACKGROUND = """
+    START_BACKGROUND = (f"""
 
     ╔════════════════════════════════════════════════════════╗
     ║                                                        ║
@@ -42,6 +45,6 @@ class const:
     ║          ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝           ║
     ║                                                        ║
     ╚════════════════════════════════════════════════════════╝
-
-    """
+    {GAME_TITLE} Version:{GAME_VERSION}
+    """)
 
