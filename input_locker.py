@@ -3,10 +3,8 @@ import keyboard
 
 
 # Статус блокировки клавиатуры
-# ВАЖНО: Для корректной работы требуется 
-# менять значение lock_keyboard_status
-# ВО время вызова функции
 lock_keyboard_status = True
+lock_mouse_status = True
 
 # функция блокировки и разблокировки ввода с клавиатуры
 def keyboard_lock(lock_keyboard_status):

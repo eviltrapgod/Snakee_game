@@ -5,12 +5,12 @@ class void:
 # Константы
 class const:
     # Список горячих клавиш для блокировки
-    BLOCK_HOTKEY_LIST = ["alt","ctrl","shift","esc","win","alt"and"F4"]
+    BLOCK_HOTKEY_LIST = ("alt","ctrl","shift","esc","win","alt"and"F4")
     # Список ответов "нет"
-    ANSW_NO_LIST = ["нет","no","-","net"]
+    ANSW_NO_LIST = ("нет","no","-","net")
     # Список ответов "да"
-    ANSW_YES_LIST = ["да","yes","+","da"]
- 
+    ANSW_YES_LIST = ("да","yes","+","da")
+
     # ярик лох ебаный
 
     agreement_text = """

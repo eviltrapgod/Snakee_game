@@ -1,13 +1,12 @@
 import start, redirect, check_agreement
 import sys
 # вызов функциональной части программы
-def main(username, game_difficulty):
+def main():
     # попытка выполнения программы 
     try:
-        # проверка статуса соглашения с условиями пользования
-        if check_agreement.check_agreement_status() == False:
+        if not check_agreement.check_status():
             sys.exit()
-        elif check_agreement.check_agreement_status() == True:
+        else:
             # вывод стартового экрана
             start.print_start_background()
             # выбор имени пользователя
@@ -18,10 +17,11 @@ def main(username, game_difficulty):
             game_difficulty = start.choose_difficulty()
             # перенаправление в игру с выбранным уровнем сложности
             redirect.redirect_to_level(game_difficulty)
-    # обработка непредвиденных ошибок
-    except Exception as e:
-        print(f"Произошла ошибка: {e}")
+    # обработка ошибок
+    except ValueError:
+        print("Неверный ввод. Пожалуйста, попробуйте еще раз.") 
+
 
 # вход в программу
 if __name__ == "__main__":
-    main("username", "game_difficulty")
+    main()
