@@ -1,12 +1,18 @@
-import start, redirect, check_agreement
+import start
+import redirect
+import check_agreement
 import sys
+import time
 # вызов функциональной части программы
 def main():
     # попытка выполнения программы 
     try:
         if not check_agreement.check_status():
+            print("Выход из программы...")
+            time.sleep(2)
             sys.exit()
         else:
+            start.main_menu()
             # вывод стартового экрана
             start.print_start_background()
             # выбор имени пользователя

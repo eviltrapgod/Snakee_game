@@ -1,9 +1,12 @@
 import cfg
 import os 
+import keyboard
 # функция выбора параметров игры
 
 def main_menu():
-    pass
+    print(cfg.const.MAIN_MENU_GRAPHICS)
+    keyboard.KEY_DOWN
+    
 
 def print_start_background():
     print(cfg.const.START_BACKGROUND)

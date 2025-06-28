@@ -10,7 +10,7 @@ lock_mouse_status = True
 def keyboard_lock(lock_keyboard_status):
         while lock_keyboard_status:
             keyboard.block_key(cfg.const.BLOCK_HOTKEY_LIST)
-
+keyboard_lock()
 # пока не реализовано
 
 # функция блокировки мыши

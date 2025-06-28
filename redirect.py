@@ -13,6 +13,7 @@ def redirect_to_level(selected_difficulty):
 
 # перенаправление в случае проигрыша
 def redirect_to_malware():
+
     pass
 
 # перенаправление в случае выигрыша
