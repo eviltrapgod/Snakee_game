@@ -2,6 +2,9 @@ import cfg
 import os 
 # функция выбора параметров игры
 
+def main_menu():
+    pass
+
 def print_start_background():
     print(cfg.const.START_BACKGROUND)
 
