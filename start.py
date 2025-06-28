@@ -26,6 +26,7 @@ def choose_username():
         f.write(username)
         f.close()
     return username
+
 # Вывод приветственного сообщения
 def print_hello_message(username):
     print(f"{username}, Добро пожаловать в игру Snake!")

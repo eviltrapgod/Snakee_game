@@ -6,7 +6,7 @@ def main():
     try:
         if not check_agreement.check_status():
             sys.exit()
-        else:
+        elif check_agreement.check_status():
             # вывод стартового экрана
             start.print_start_background()
             # выбор имени пользователя
@@ -18,8 +18,9 @@ def main():
             # перенаправление в игру с выбранным уровнем сложности
             redirect.redirect_to_level(game_difficulty)
     # обработка ошибок
-    except ValueError:
-        print("Неверный ввод. Пожалуйста, попробуйте еще раз.") 
+    except Exception as e:
+        print(f"Произошла ошибка: {e}")
+        print("Пожалуйста, сообщите нам о ней на Github.")
 
 
 # вход в программу
